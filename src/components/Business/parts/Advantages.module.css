@@ -1,0 +1,152 @@
+/*?  Advantages   ============================================ */
+
+.Advantages__Section {
+  margin-top: 2rem;
+  background: url(../../../asses/gradient.png) center center / cover no-repeat;
+}
+.AdvCard_container {
+  width: 960px;
+  max-width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+.Advantages {
+  display: grid;
+  justify-items: center;
+  text-align: left;
+  grid-template-areas:
+    "adv1 adv2"
+    "adv3 adv4"
+    "adv5 adv6";
+  gap: 50px;
+}
+.advantage_title {
+  font-size: 65px;
+  margin: 0;
+  margin-top: -26px;
+}
+.Adv_btn {
+  cursor: pointer;
+  background-color: #715eed;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 2.2rem;
+  border: none;
+  text-transform: uppercase;
+  background: linear-gradient(rgb(115, 96, 242) 0%, rgb(91, 73, 212) 100%);
+}
+.Adv_arrow {
+  background-color: white;
+  color: #715eed;
+  border-radius: 50%;
+  font-size: 18px;
+  height: 5px;
+  padding: 0 3px 3px 3px;
+}
+
+.AdvCard {
+  color: #7360f2;
+  font-size: 16px;
+}
+.AdvCard1,
+.AdvCard2,
+.AdvCard3,
+.AdvCard4,
+.AdvCard5,
+.AdvCard6 {
+  width: 100%;
+  height: 100%;
+}
+.AdvCard1 {
+  grid-area: adv1;
+}
+.AdvCard2 {
+  grid-area: adv2;
+}
+.AdvCard3 {
+  grid-area: adv3;
+}
+.AdvCard4 {
+  grid-area: adv4;
+}
+.AdvCard5 {
+  grid-area: adv5;
+}
+.AdvCard6 {
+  grid-area: adv6;
+}
+.rightArrow_btn,
+.leftArrow_btn,
+.pagination_scroll,
+.pagination_scroll_big {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .AdvCard_container {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .AdvCard_container {
+    width: 450px;
+  }
+  .Advantages {
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+    overflow-x: scroll;
+    grid-template-areas: "adv1 adv2 adv3 adv4 adv5 adv6";
+  }
+  .Advantages::-webkit-scrollbar {
+    display: none;
+  }
+
+  .advantage_title {
+    font-size: 42px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  .AdvCard1,
+  .AdvCard2,
+  .AdvCard3,
+  .AdvCard4,
+  .AdvCard5,
+  .AdvCard6 {
+    min-width: 450px;
+  }
+  .pagination_scroll {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(115, 96, 242);
+    font-size: 60px;
+    margin: 8px;
+    margin-top: -200px;
+  }
+  .pagination_scroll_big {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(115, 96, 242);
+    margin: 8px;
+    font-size: 120px;
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .AdvCard_container {
+    width: 280px;
+  }
+  .AdvCard1,
+  .AdvCard2,
+  .AdvCard3,
+  .AdvCard4,
+  .AdvCard5,
+  .AdvCard6 {
+    min-width: 280px;
+  }
+}

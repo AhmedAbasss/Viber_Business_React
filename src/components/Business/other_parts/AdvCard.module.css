@@ -1,0 +1,46 @@
+.AdvCard {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(205, 201, 227, 0.1);
+  border: 1px solid rgb(255, 255, 255);
+  height: 100%;
+  border-radius: 70px;
+  padding: 8px 0px 32px 8px;
+}
+.AdvCard_title {
+  max-width: 220px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26.4px;
+  min-height: 2;
+  line-height: 35px;
+  color: rgb(0, 0, 0);
+  margin-top: 47px;
+}
+.AdvCard_dec {
+  max-width: 260px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+  .AdvCard_img {
+    width: 80px;
+  }
+  .AdvCard_title {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-right: 25px;
+  }
+  .AdvCard_dec {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+}

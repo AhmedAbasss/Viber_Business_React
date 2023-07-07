@@ -1,0 +1,137 @@
+.Statistics_Section {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #e8e8e8;
+}
+.Statistics {
+  padding: 1rem 2rem;
+}
+.Statistics:first-child {
+  border-right: 1px solid #e8e8e8;
+}
+.Statistics:last-child {
+  display: grid;
+  grid-template-rows: 80px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title title"
+    "num num num";
+}
+.num_title {
+  font-size: 24px;
+  font-weight: 400;
+  grid-area: title;
+}
+
+.number {
+  color: #715eed;
+  padding: 0;
+  margin: 0;
+  font-size: 100px;
+  animation: 0.5s ease 0s 1 normal forwards running jGAKde;
+  margin-top: -50px;
+  grid-area: num;
+  display: inline-block;
+}
+.Statistics_NumberRow {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.num_plus,
+.num_type {
+  display: inline-block;
+  color: #715eed;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  /* margin-top: -150px; */
+}
+
+.num_plus {
+  font-size: 46px;
+  font-weight: 900;
+  margin-top: -50px;
+}
+.num_type {
+  margin: 20px 0px 0 -24px;
+}
+
+.num_desecration1 {
+  display: none;
+}
+.num_desecration2 {
+  color: #7870a9;
+  font-size: 18px;
+  padding-right: 4rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Statistics_Section {
+    display: block;
+    height: auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .Statistics:last-child {
+    display: block;
+    grid-template-rows: none;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "num";
+  }
+  .Statistics_NumberRow {
+    display: flex;
+    justify-content: center;
+  }
+  .num_title {
+    font-size: 22px;
+    margin-right: 15rem;
+  }
+
+  .number {
+    padding-top: 20px;
+    font-size: 40px;
+  }
+  .num_plus,
+  .num_type {
+    padding-left: 5px;
+    font-size: 16px;
+  }
+  .num_plus {
+    font-size: 30px;
+  }
+
+  .num_desecration1 {
+    display: block;
+    color: #7870a9;
+    font-size: 18px;
+    padding-right: 4rem;
+    width: 250px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .num_desecration2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .num_title {
+    font-size: 22px;
+    text-align: left;
+    margin-right: 0;
+  }
+  .num_desecration1 {
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

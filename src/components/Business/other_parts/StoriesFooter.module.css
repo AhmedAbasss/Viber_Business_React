@@ -1,0 +1,134 @@
+.storyFooter {
+  display: block;
+  color: rgb(115, 96, 242);
+  font-size: 65px;
+  width: 960px;
+  max-width: 100%;
+  margin: 0px auto;
+  margin-bottom: 56px;
+  padding-left: 15px;
+}
+.story_title {
+  display: block;
+  color: rgb(115, 96, 242);
+  font-size: 65px;
+  width: 960px;
+  max-width: 100%;
+  margin: 0px auto;
+  margin-bottom: 56px;
+  padding-left: 15px;
+}
+
+.StoryCard {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  overflow-x: scroll;
+  color: rgb(115, 96, 242);
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+
+  width: 960px;
+  max-width: 100%;
+  margin: 0px auto;
+}
+.StoryCard::-webkit-scrollbar {
+  display: none;
+}
+
+.OneStoryCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.storyCard_text {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  color: rgb(115, 96, 242);
+  margin-top: 33px;
+  margin-left: 20px;
+  padding-right: 35px;
+}
+
+.story_btn {
+  cursor: pointer;
+  text-align: center;
+  background-color: #715eed;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 2.2rem;
+  border: none;
+  text-transform: uppercase;
+  background: linear-gradient(rgb(115, 96, 242) 0%, rgb(91, 73, 212) 100%);
+}
+.story_arrow {
+  background-color: white;
+  color: #715eed;
+  border-radius: 50%;
+  font-size: 18px;
+  height: 5px;
+  padding: 0 3px 3px 3px;
+}
+.pagination_scroll {
+  cursor: pointer;
+  display: inline-block;
+  margin: 8px;
+  margin-top: -200px;
+}
+.pagination_scroll_big {
+  cursor: pointer;
+  display: inline-block;
+  margin: 8px;
+  font-size: 120px;
+  margin-top: -200px;
+}
+.storyCard_img {
+  border-radius: 2rem;
+  width: 440px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .storyFooter {
+    width: 760px;
+  }
+  .story_title {
+    font-size: 52px;
+  }
+  .storyCard_text {
+    font-size: 24px;
+  }
+  .storyCard_img {
+    width: 340px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .story_title {
+    font-size: 42px;
+  }
+  .storyFooter {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .story_title {
+    font-size: 32px;
+  }
+  .storyFooter {
+    width: 300px;
+  }
+  .storyCard_text {
+    font-size: 19px;
+  }
+  .storyCard_img {
+    width: 280px;
+    height: 180px;
+  }
+}

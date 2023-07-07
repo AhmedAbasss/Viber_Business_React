@@ -1,0 +1,129 @@
+/* ? footer ===================================================== */
+
+.FooterBanner__Wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #7360f2;
+  color: white;
+  height: 340px;
+  border-top-right-radius: 6rem;
+  border-top-left-radius: 6rem;
+}
+.FooterBanner_h2 {
+  font-size: 42px;
+}
+
+.FooterBanner_img {
+  margin-top: -90px;
+  height: 430px;
+  width: 520px;
+}
+
+.FooterBanner_btn {
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  color: #715eed;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  border: none;
+  text-transform: uppercase;
+  /* background: linear-gradient(rgb(115, 96, 242) 0%, rgb(91, 73, 212) 100%); */
+}
+.FooterBanner_arrow {
+  color: #715eed;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  height: 5px;
+  padding: 0 3px 3px 3px;
+}
+
+.FooterBanner_edgeBtn {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 140px;
+  z-index: 301;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: white;
+  color: rgb(115, 96, 242);
+  border-top-right-radius: 15px;
+  border: none;
+  height: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  padding: 0.8em 2em;
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+
+/* ?  footer end  */
+
+.Footer_end {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100px;
+  padding-bottom: 30px 0 25px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.Footer_a {
+  text-decoration: none;
+  margin: 6px;
+  color: #7360f2;
+}
+
+.footer_btn {
+  background-color: white;
+  color: #7360f2;
+  font-size: 14px;
+  padding: 12px 30px;
+  border: 2px solid #7360f2;
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .FooterBanner__Wrapper {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  /* .FooterBanner__Wrapper {
+    font-size: 20px;
+  } */
+  .FooterBanner_btn,
+  .FooterBanner_arrow {
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  .footer_btn {
+    font-size: 12px;
+  }
+  .FooterBanner_img {
+    margin-top: -60px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    /* max-width: 100%; */
+  }
+}
+@media only screen and (max-width: 700px) {
+  .FooterBanner_img {
+    display: none;
+  }
+  .Footer_a {
+    display: none;
+  }
+  .footer_btn {
+    display: none;
+  }
+}

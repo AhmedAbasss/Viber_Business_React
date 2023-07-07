@@ -1,0 +1,130 @@
+.Video_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 15px 90px 15px;
+  background: url(../../../asses/video.webp) center center / cover no-repeat;
+}
+.video {
+  width: 960px;
+  margin: 0px auto;
+}
+
+.VideoSection__Content {
+  position: relative;
+}
+.video_Content::before,
+.video_Content::after {
+  content: "";
+  position: absolute;
+  background-color: #7360f2;
+  height: 70px;
+  width: 960px;
+  max-width: 100%;
+  margin: 0px auto;
+  left: 0px;
+  z-index: 80;
+  transition: all 0.3s ease 0s;
+  opacity: 1;
+}
+.video_Content::before {
+  opacity: 1;
+  bottom: -65px !important;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.video_Content::after {
+  left: 0px;
+  top: -65px !important;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+}
+
+.video_wallpaper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  background-color: #7360f2;
+  /* background-color: #8574f5; */
+  color: white;
+  text-align: center;
+  border-radius: 70px;
+  width: 960px;
+  max-width: 100%;
+  height: 540px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(#8574f5cc, #8574f5cc),
+    url("https://i.gifer.com/OOFa.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.video_text {
+  font-size: 86px;
+  margin: 0;
+}
+.video_btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #7360f2;
+  padding: 0 0 8px 5px;
+  font-size: 36px;
+  width: 120px;
+  height: 120px;
+  border-radius: 45px;
+  transition: 400ms;
+}
+.video_btn:hover {
+  border-radius: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .VideoSection__Content {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+  }
+  .video_wallpaper {
+    width: 100%;
+    height: 450px;
+  }
+  .video_Content::before,
+  .video_Content::after {
+    width: 100%;
+  }
+  .video_text {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Video_section * {
+    border-radius: 30px;
+  }
+  .Video_section {
+    padding: 40px 8px 40px 8px;
+  }
+  .video_Content::before,
+  .video_Content::after {
+    display: none;
+  }
+  .video_wallpaper {
+    width: 100%;
+    height: 230px;
+    gap: 30px;
+  }
+  .video_text {
+    font-size: 32px;
+  }
+  .video_btn {
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    border-radius: 28px;
+  }
+}
