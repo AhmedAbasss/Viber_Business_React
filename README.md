@@ -1,5 +1,4 @@
 # Viber Business OpenSorce React page
-# Viber business OpenSorce
 This is the main page of the Viber business website made by react 
 
 ================================================================================
